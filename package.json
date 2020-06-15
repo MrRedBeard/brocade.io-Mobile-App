@@ -1,0 +1,34 @@
+{
+  "name": "com.x2.brocade",
+  "displayName": "brocade",
+  "version": "1.0.0",
+  "description": "Mobile App that uses the Brocade API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-qr-barcode-scanner": "^8.0.3",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "devDependencies": {},
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-qr-barcode-scanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  }
+}

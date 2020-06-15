@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"BarcodeScanner\"><param name=\"browser-package\" value=\"BarcodeScanner\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-qr-barcode-scanner": {
+      "PACKAGE_NAME": "com.x2.brocade"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.x2.brocade"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "file": "plugins/cordova-plugin-qr-barcode-scanner/www/barcodescanner.js",
+      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScanner",
+      "pluginId": "cordova-plugin-qr-barcode-scanner",
+      "clobbers": [
+        "cordova.plugins.barcodeScanner"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-qr-barcode-scanner/src/browser/BarcodeScannerProxy.js",
+      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScannerProxy",
+      "pluginId": "cordova-plugin-qr-barcode-scanner",
+      "runs": true
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-qr-barcode-scanner": "8.0.3",
+    "cordova-plugin-whitelist": "1.3.4"
+  }
+}

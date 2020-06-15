@@ -1,0 +1,18 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-qr-barcode-scanner": {
+      "PACKAGE_NAME": "com.x2.brocade"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.x2.brocade"
+    }
+  },
+  "dependent_plugins": {}
+}
