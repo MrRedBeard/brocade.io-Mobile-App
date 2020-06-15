@@ -7,11 +7,11 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-qr-barcode-scanner": {
-      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.x2.brocade"
     },
-    "cordova-plugin-whitelist": {
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.x2.brocade"
     }
   },

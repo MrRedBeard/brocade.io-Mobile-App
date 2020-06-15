@@ -7,10 +7,10 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-qr-barcode-scanner": {
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.x2.brocade"
     },
-    "cordova-plugin-whitelist": {
+    "phonegap-plugin-barcodescanner": {
       "PACKAGE_NAME": "com.x2.brocade"
     }
   },

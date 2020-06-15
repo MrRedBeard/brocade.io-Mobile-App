@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Brocade",
+  "short_name": "Brocade",
+  "version": "com.x2.brocade",
+  "description": "Brocade Mobile App",
+  "author": "X2 Labs Development Team",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#000"
+}

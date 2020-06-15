@@ -97,12 +97,12 @@ class brocadeWrapper
     scan()
     {
         //ToDo Replace barcode scanner plugin with an alternate plugin
-        let upc = '';
         cordova.plugins.barcodeScanner.scan(
             function (result)
             {
-                upc = result.text;
-            },
+                this.currentItemUPC = result.text;
+                this.getItem();
+            }.bind(this),
             function (error)
             {
             },
@@ -114,15 +114,12 @@ class brocadeWrapper
                 saveHistory: false, // Android, save scan history (default false)
                 prompt: "Place a barcode inside the scan area", // Android
                 resultDisplayDuration: 500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
-                formats: "DATA_MATRIX,UPC_A,UPC_E,CODE_39", // default: all but PDF_417 and RSS_EXPANDED
+                formats: "UPC_A,UPC_E,CODE_39,upc_EAN_EXTENSION", //DATA_MATRIX,UPC_A,UPC_E,CODE_39 // default: all but PDF_417 and RSS_EXPANDED
                 orientation: "portrait", // Android only (portrait|landscape), default unset so it rotates with the device
                 disableAnimations: true, // iOS
                 disableSuccessBeep: false // iOS and Android
             }
         );
-
-        this.currentItemUPC = upc;
-        this.getItem();
     }
 
     getListItemsInterface()
@@ -251,6 +248,8 @@ class brocadeWrapper
         {
             this.currentItemUPC = this.currentItemUPC.replace(' ', '');
         }
+
+        //alert(this.currentItemUPC);
 
         if (this.currentItemUPC.length <= 0)
         {

@@ -18,32 +18,32 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-qr-barcode-scanner": {
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.x2.brocade"
     },
-    "cordova-plugin-whitelist": {
+    "phonegap-plugin-barcodescanner": {
       "PACKAGE_NAME": "com.x2.brocade"
     }
   },
   "dependent_plugins": {},
   "modules": [
     {
-      "file": "plugins/cordova-plugin-qr-barcode-scanner/www/barcodescanner.js",
-      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScanner",
-      "pluginId": "cordova-plugin-qr-barcode-scanner",
+      "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
+      "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
+      "pluginId": "phonegap-plugin-barcodescanner",
       "clobbers": [
         "cordova.plugins.barcodeScanner"
       ]
     },
     {
-      "file": "plugins/cordova-plugin-qr-barcode-scanner/src/browser/BarcodeScannerProxy.js",
-      "id": "cordova-plugin-qr-barcode-scanner.BarcodeScannerProxy",
-      "pluginId": "cordova-plugin-qr-barcode-scanner",
+      "file": "plugins/phonegap-plugin-barcodescanner/src/browser/BarcodeScannerProxy.js",
+      "id": "phonegap-plugin-barcodescanner.BarcodeScannerProxy",
+      "pluginId": "phonegap-plugin-barcodescanner",
       "runs": true
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-qr-barcode-scanner": "8.0.3",
-    "cordova-plugin-whitelist": "1.3.4"
+    "cordova-plugin-whitelist": "1.3.4",
+    "phonegap-plugin-barcodescanner": "8.1.0"
   }
 }
