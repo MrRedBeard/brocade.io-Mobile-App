@@ -96,7 +96,6 @@ class brocadeWrapper
 
     scan()
     {
-        //ToDo Replace barcode scanner plugin with an alternate plugin
         cordova.plugins.barcodeScanner.scan(
             function (result)
             {
