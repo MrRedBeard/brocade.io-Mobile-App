@@ -11,7 +11,7 @@ Consumes Brocade API written by Tom Tuddenham aka ferrisoxide
 I do not have a Mac so the iOS version is untested. 
 
 ## Android APK
-[Android APK](BrocadeMobile.apk)
+[Android APK](BrocadeMobile.apk) Latest Alpha Release
 
 ## ScreenShots
 ![Lookup Interface](/Screenshots/LookUp.png)
