@@ -1,5 +1,5 @@
 # brocade.io-Mobile-App
-Mobile App for brocade.io for Android & iOS
+Mobile App for brocade.io for Android & iOS written using Apache Cordova
 
 Consumes Brocade API written by Tom Tuddenham aka ferrisoxide
 
